@@ -19,6 +19,18 @@ icon: https://upload.wikimedia.org/wikipedia/commons/d/de/Logo_TU_Bergakademie_F
 
 # CAN-Bus
 
+| Parameter                | Kursinformationen                                                                                                                                                                    |
+| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Veranstaltung:**       | `Praktikum Digitale Systeme`                                                                                                                                                      |
+| **Hochschule:**          | `Technische Universität Freiberg`                                                                                                                                                    |
+| **Inhalte:**             | `Einführung in Komponenten und Funktionsweise des CAN-Bus`                                                                                            |
+| **Link auf den GitHub:** | [https://github.com/TUBAF-IfI-LiaScript/VL_DigitaleSysteme/blob/main/lectures/01_Grundbegriffe.md](https://github.com/Voetzl/CAN-Bus) |
+| **Autoren**              | @author                                                                                                                                                                              |
+
+![](https://cdn.discordapp.com/attachments/667797054474420238/985561027032793178/unknown.png)
+
+---
+
 Test, ändert der iwas überhaupt?
 
 ## Motivation (für eure Aufmerksamkeit)
