@@ -23,9 +23,11 @@ Test, ändert der iwas überhaupt?
 
 ## Motivation (für eure Aufmerksamkeit)
 
-<!-- style="display: block; margin-left: auto; margin-right: auto; max-width: 1000px;" -->
-```ascii
+```text @plantUML.png
+@startuml
+ditaa
 +-----------------+-----------------------------------+
+| c8F8            | c8F8                              |
 | Geschichte      |                                   |
 +-----------------+-----------------------------------+
 | Aufbau          | Elektrische Funktionsweise        |
@@ -36,6 +38,7 @@ Test, ändert der iwas überhaupt?
 +-----------------+-----------------------------------+
 | Anwendung TFY   | Überraschung :)                   |
 +-----------------+-----------------------------------+
+@enduml
 ```
 
 
