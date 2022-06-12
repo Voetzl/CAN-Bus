@@ -3,7 +3,7 @@
 author:   Bastian Zötzl
 email:    bastian.zoetzl@outlook.com
 
-version:  0.0.1
+version:  0.0.2
 language: de
 narrator: Deutsch Female
 
