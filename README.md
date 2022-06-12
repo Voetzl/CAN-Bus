@@ -41,7 +41,7 @@ icon: https://upload.wikimedia.org/wikipedia/commons/d/de/Logo_TU_Bergakademie_F
 | Anwendung IRL   | Lichtanlage Golf                  |
 | Anwendung TFY   | Überraschung :)                   |
 
-###
+
 
 
 
@@ -49,6 +49,7 @@ icon: https://upload.wikimedia.org/wikipedia/commons/d/de/Logo_TU_Bergakademie_F
 ## Geschichte und Einordnung
 
 **1987 stellt Bosch das Controller-Area-Network vor.**
+
 * Entwicklung begann 1981 (Fertigungstechnik), 1983 begann die Weiterentwicklung für Kraftfahrzeuge
 * Daimler nutzt erste Serienanwendung in 1991
 * Jahrtausendwende bringt Weiterentwicklungen: Subsystem LIN (Local Interconnect Network)
@@ -61,7 +62,7 @@ icon: https://upload.wikimedia.org/wikipedia/commons/d/de/Logo_TU_Bergakademie_F
 @startuml
 ditaa
 +------------------------+   +---------------------+   +-----------+
-|c8F8                    |   |                     |   |           |
+|cF88                    |   |cFF4                 |   |c8F8       |
 | Serielle Kommunikation |-->| Parallelverdrahtung |-->| Feldbusse |
 |                        |   |                     |   |           |
 +------------------------+   +---------------------+   +-----------+
@@ -72,31 +73,7 @@ ditaa
 * Nur ein Kabel
 * Master-Slave-Betrieb
 
-```text @plantUML.png
-@startuml
-ditaa
-  ^  |
-  |  V
-+-+----+     +----------------------------+
-|c8F8  |     |c88F   Speicherwerk         |
-|      |<--->|   +--------+  +--------+   |
-|      |     |   |Programm|  | Daten  |   |
-|      |     |   +--------+  +--------+   |
-|      |     +------+---------------------+
-|      |         ^  |             ^
-| E/A- | Adressen:  | Befehle     | Daten
-| Werk |         |  V             V
-|      |     +---+------+    +------------+
-|      |     |cF88      |    | Rechenwerk |
-|      |     |          |    |cFF4        |
-|      |     |          |<-=-+ +--------+ |
-|      |<--=-+Steuerwerk|    | |Register| |
-|      |     |          +-=->| +--------+ |
-|      |     |          |    | |  ALU   | |
-|      |     |          |    | +--------+ |
-+------+     +----------+    +------------+
-@enduml
-```
+
 ---
 
 ## Aufbau
