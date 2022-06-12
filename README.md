@@ -28,7 +28,7 @@ Test, ändert der iwas überhaupt?
 ditaa
 +-----------------+-----------------------------------+
 | c8F8            | c8F8                              |
-| Geschichte      |                                   |
+| Geschichte      | Änderungstest                     |
 +-----------------+-----------------------------------+
 | Aufbau          | Elektrische Funktionsweise        |
 +-----------------+-----------------------------------+
