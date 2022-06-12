@@ -41,10 +41,6 @@ icon: https://upload.wikimedia.org/wikipedia/commons/d/de/Logo_TU_Bergakademie_F
 | Anwendung IRL   | Lichtanlage Golf                  |
 | Anwendung TFY   | Überraschung :)                   |
 
-###
-
-
-
 
 ## Geschichte und Einordnung
 
@@ -78,23 +74,26 @@ ditaa
 @enduml
 ```
 
-Feldbusse sind die Weiterentwicklung der Parallelverdrahtung um den Kabelbedarf zu mindern. 
-Die Bezeichnung "Feldbus" meint dabei nur, dass ein Master-Slave-Betrieb verwendet wird. Desweiteren variieren Feldbusse in ihrer/n
+Feldbusse sind die Weiterentwicklung der Parallelverdrahtung um den Kabelbedarf zu mindern. Die Notwendigkeit besteht vor allem in der Industrie.
+Dabei werden mit "Feldbus" alle Bussysteme angesprochen, die 'Sensoren und Aktoren zum Informationsaustausch mit einem Steuerungsrechner verbinden'. Jeder Hersteller hat dazu seine eigene*n
 
 * Topologie (Stern, Linie, Baum)
-* Übertragungsprotokollen
+* Fehlererkennung / -vermeidung
+* Protokollstandards
+
+entworfen. Zusätzlich unterscheiden sich die Systeme in ihrer/n 
+
 * maximalen Kabellänge
 * maximalen Datenbytes
+* Übertragungsmedien
 
-| Italic             |  Block letters |
-:-------------------------:|:-------------------------:
-![](https://cdn.discordapp.com/attachments/667797054474420238/985578194444894268/unknown.png) | ![](https://cdn.discordapp.com/attachments/667797054474420238/985578863235047494/unknown.png) 
+Beim CAN-Bus ist kein Steuerungsrechner notwendig, er zählt daher auch nicht zu den "klassischen" Feldbussen.
+
+![](https://cdn.discordapp.com/attachments/667797054474420238/985578194444894268/unknown.png)
  
-Der CAN-Bus läuft NICHT im Master-Slave Betrieb, dazu später mehr.
-
+Notiz (LÖSCHEN): Diese Feldbus-Entwicklung in der Industrie war gewesen. Dort war der Master-Slave Betrieb immer notwendig und sinnvoll. Für Kraftfahrzeuge gab es wiederum andere Anforderungen -- Der CAN Bus wurde entworfen
 
 ********************************************************************************
-
 
 
 ## Aufbau
