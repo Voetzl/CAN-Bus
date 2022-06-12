@@ -3,7 +3,7 @@
 author:   Bastian Zötzl
 email:    bastian.zoetzl@outlook.com
 
-version:  0.0.5
+version:  0.0.6
 language: de
 narrator: Deutsch Female
 
@@ -35,10 +35,11 @@ icon: https://upload.wikimedia.org/wikipedia/commons/d/de/Logo_TU_Bergakademie_F
 
 | Kurze Übersicht |                                   |
 | --------------- | --------------------------------- |
-| Geschichte      |                    |
+| Geschichte und Einordnung    |                    |
 | Aufbau          | Elektrische Funktionsweise        |
 | Datenübertragung | Datenpakete, Prioritäten, Getriggerte Komponenten|
 | Anwendung IRL   | Lichtanlage Golf                  |
+| CAN auf dem STM32    | CAN-Transceiver                   |
 | Anwendung TFY   | Überraschung :)                   |
 
 
@@ -95,13 +96,34 @@ Notiz (LÖSCHEN): Diese Feldbus-Entwicklung in der Industrie war gewesen. Dort w
 
 ********************************************************************************
 
+## Elektrische Funktionsweise
 
-## Aufbau
+Can High, Can Low, Überprüfung mit Oszilloskop, rezessiv, dominant.
 
-Das Ding ist cool aufgebaut!
+Unterpunkt (0-2 für alles??): Verschiedene Übertragunsgeschwindigkeiten --> Verschiedene Potentiale
 
+## Datenübertragung
 
-**Elektrische Eigenschaften**
+Aufbau eines Datenübertragungspakets
 
-**Sonstiger Aufbau lel**
+Prioriätetensetzung
+
+Wiederholung bei höherer Priorität / bei Fehlerhafter Übertragung
+
+## Beispiel GOLF
+
+--> Auch noch Vorteil ggü. alles verdrahten
+--> In kurz: Also da sendet jetzt hier die Lichtanlage einfach immer ihren Status, den kann man auch überschreiben...
+--> Problem bei Überlastung
+--Video am Ende mit einbetten
+
+## Anwendung des CAN-Protokolls auf dem STM32
+
+--> Eigentlich ist hier die Transceiver-Erklärung dann so drin...
+
+## Mein Ultra-Tolles-Anwendungsbeispiel
+
+--> Fotos auf Unterseite...
+
+## Quellen
 
