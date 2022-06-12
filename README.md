@@ -3,7 +3,7 @@
 author:   Bastian Zötzl
 email:    bastian.zoetzl@outlook.com
 
-version:  0.0.3
+version:  0.0.4
 language: de
 narrator: Deutsch Female
 
@@ -23,23 +23,18 @@ Test, ändert der iwas überhaupt?
 
 ## Motivation (für eure Aufmerksamkeit)
 
-```text @plantUML.png
-@startuml
-ditaa
-+-----------------+-----------------------------------+
-| c8F8            | c8F8                              |
+
 | Geschichte      | Änderungstest                     |
-+-----------------+-----------------------------------+
+| --------------- | --------------------------------- |
 | Aufbau          | Elektrische Funktionsweise        |
-+-----------------+-----------------------------------+
+| --------------- | --------------------------------- |
 | Datenübertragung | Datenpakete, Prioritäten, Getriggerte Komponenten|
-+-----------------+-----------------------------------+
+| --------------- | --------------------------------- |
 | Anwendung IRL   | Lichtanlage Golf                  |
-+-----------------+-----------------------------------+
+| --------------- | --------------------------------- |
 | Anwendung TFY   | Überraschung :)                   |
-+-----------------+-----------------------------------+
-@enduml
-```
+
+
 
 
 ## Geschichte
