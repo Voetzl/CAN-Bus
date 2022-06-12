@@ -15,9 +15,27 @@ icon: https://upload.wikimedia.org/wikipedia/commons/d/de/Logo_TU_Bergakademie_F
 
 -->
 
-[![LiaScript](https://raw.githubusercontent.com/LiaScript/LiaScript/master/badges/course.svg)](https://github.com/Voetzl/CAN-Bus/blob/main/README.md)
+[![LiaScript](https://raw.githubusercontent.com/LiaScript/LiaScript/master/badges/course.svg)](https://liascript.github.io/course/?https://github.com/Voetzl/CAN-Bus/blob/main/README.md)
 
 # CAN-Bus
+
+## Motivation (für eure Aufmerksamkeit)
+
+<!-- style="display: block; margin-left: auto; margin-right: auto; max-width: 10000px;" -->
+```ascii
++-----------------+-----------------------------------+
+| Geschichte      |                                   |
++-----------------+-----------------------------------+
+| Aufbau          | Elektrische Funktionsweise        |
++-----------------+-----------------------------------+
+| Datenübertragung | Datenpakete, Prioritäten, Getriggerte Komponenten|
++-----------------+-----------------------------------+
+| Anwendung IRL   | Lichtanlage Golf                  |
++-----------------+-----------------------------------+
+| Anwendung TFY   | Überraschung :)                   |
++-----------------+-----------------------------------+
+```
+
 
 ## Geschichte
 
