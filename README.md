@@ -41,20 +41,28 @@ icon: https://upload.wikimedia.org/wikipedia/commons/d/de/Logo_TU_Bergakademie_F
 | Anwendung IRL   | Lichtanlage Golf                  |
 | Anwendung TFY   | Überraschung :)                   |
 
-
+###
 
 
 
 
 ## Geschichte und Einordnung
 
-**1987 stellt Bosch das Controller-Area-Network vor.**
+                    {{0-1}}
+********************************************************************************
+
+**1987 stellt Bosch das Controller-Area-Network vor**
 
 * Entwicklung begann 1981 (Fertigungstechnik), 1983 begann die Weiterentwicklung für Kraftfahrzeuge
 * Daimler nutzt erste Serienanwendung in 1991
 * Jahrtausendwende bringt Weiterentwicklungen: Subsystem LIN (Local Interconnect Network)
 * Große Weiterentwicklung in 2012 mit vergrößertem Datenfeld auf 64 Byte (urspr. 8)
 
+
+********************************************************************************
+
+                                  {{1-2}}
+********************************************************************************
 
 **Der CAN-Bus gehört zu den Feldbussen**
 
@@ -66,15 +74,15 @@ ditaa
 | Serielle Kommunikation |-->| Parallelverdrahtung |-->| Feldbusse |
 |                        |   |                     |   |           |
 +------------------------+   +---------------------+   +-----------+
-
 @enduml
 ```
 
 * Nur ein Kabel
 * Master-Slave-Betrieb
 
+********************************************************************************
 
----
+
 
 ## Aufbau
 
