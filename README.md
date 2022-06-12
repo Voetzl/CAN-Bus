@@ -3,7 +3,7 @@
 author:   Bastian Zötzl
 email:    bastian.zoetzl@outlook.com
 
-version:  0.0.2
+version:  0.0.3
 language: de
 narrator: Deutsch Female
 
@@ -23,8 +23,8 @@ Test, ändert der iwas überhaupt?
 
 ## Motivation (für eure Aufmerksamkeit)
 
-
-```
+<!-- style="display: block; margin-left: auto; margin-right: auto; max-width: 1000px;" -->
+```ascii
 +-----------------+-----------------------------------+
 | Geschichte      |                                   |
 +-----------------+-----------------------------------+
