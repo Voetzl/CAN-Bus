@@ -9,7 +9,7 @@ narrator: Deutsch Female
 
 import:  https://raw.githubusercontent.com/liascript-templates/plantUML/master/README.md
          https://github.com/LiaTemplates/AVR8js/main/README.md
-         https://github.com/LiaTemplates/Pyodide
+
 
 icon: https://upload.wikimedia.org/wikipedia/commons/d/de/Logo_TU_Bergakademie_Freiberg.svg
 
@@ -24,7 +24,7 @@ Test, ändert der iwas überhaupt?
 ## Motivation (für eure Aufmerksamkeit)
 
 
-```ascii
+```
 +-----------------+-----------------------------------+
 | Geschichte      |                                   |
 +-----------------+-----------------------------------+
