@@ -24,14 +24,12 @@ icon: https://upload.wikimedia.org/wikipedia/commons/d/de/Logo_TU_Bergakademie_F
 | **Veranstaltung:**       | `Praktikum Digitale Systeme`                                                                                                                                                      |
 | **Hochschule:**          | `Technische Universität Freiberg`                                                                                                                                                    |
 | **Inhalte:**             | `Einführung in Komponenten und Funktionsweise des CAN-Bus`                                                                                            |
-| **Link auf den GitHub:** | [https://github.com/TUBAF-IfI-LiaScript/VL_DigitaleSysteme/blob/main/lectures/01_Grundbegriffe.md](https://github.com/Voetzl/CAN-Bus) |
+| **Link auf den GitHub:** | [https://github.com/Voetzl/CAN-Bus](https://github.com/Voetzl/CAN-Bus) |
 | **Autoren**              | @author                                                                                                                                                                              |
 
 ![](https://cdn.discordapp.com/attachments/667797054474420238/985561027032793178/unknown.png)
 
 ---
-
-Test, ändert der iwas überhaupt?
 
 ## Motivation (für eure Aufmerksamkeit)
 
@@ -48,10 +46,57 @@ Test, ändert der iwas überhaupt?
 
 
 
-## Geschichte
+## Geschichte und Einordnung
 
-Das Ding ist sehr alt
+**1987 stellt Bosch das Controller-Area-Network vor.**
+* Entwicklung begann 1981 (Fertigungstechnik), 1983 begann die Weiterentwicklung für Kraftfahrzeuge
+* Daimler nutzt erste Serienanwendung in 1991
+* Jahrtausendwende bringt Weiterentwicklungen: Subsystem LIN (Local Interconnect Network)
+* Große Weiterentwicklung in 2012 mit vergrößertem Datenfeld auf 64 Byte (urspr. 8)
 
+
+**Der CAN-Bus gehört zu den Feldbussen**
+
+```text @plantUML.png
+@startuml
+ditaa
++------------------------+   +---------------------+   +-----------+
+|c8F8                    |   |                     |   |           |
+| Serielle Kommunikation |-->| Parallelverdrahtung |-->| Feldbusse |
+|                        |   |                     |   |           |
++------------------------+   +---------------------+   +-----------+
+
+@enduml
+```
+
+* Nur ein Kabel
+* Master-Slave-Betrieb
+
+```text @plantUML.png
+@startuml
+ditaa
+  ^  |
+  |  V
++-+----+     +----------------------------+
+|c8F8  |     |c88F   Speicherwerk         |
+|      |<--->|   +--------+  +--------+   |
+|      |     |   |Programm|  | Daten  |   |
+|      |     |   +--------+  +--------+   |
+|      |     +------+---------------------+
+|      |         ^  |             ^
+| E/A- | Adressen:  | Befehle     | Daten
+| Werk |         |  V             V
+|      |     +---+------+    +------------+
+|      |     |cF88      |    | Rechenwerk |
+|      |     |          |    |cFF4        |
+|      |     |          |<-=-+ +--------+ |
+|      |<--=-+Steuerwerk|    | |Register| |
+|      |     |          +-=->| +--------+ |
+|      |     |          |    | |  ALU   | |
+|      |     |          |    | +--------+ |
++------+     +----------+    +------------+
+@enduml
+```
 ---
 
 ## Aufbau
@@ -59,7 +104,7 @@ Das Ding ist sehr alt
 Das Ding ist cool aufgebaut!
 
 
-**Elektrischer Aufbau**
+**Elektrische Eigenschaften**
 
 **Sonstiger Aufbau lel**
 
