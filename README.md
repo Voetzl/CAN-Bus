@@ -85,10 +85,7 @@ Die Bezeichnung 'Feldbus' ist ein Überbegriffmeint dabei nur, dass ein Master-S
 * maximalen Kabellänge
 * maximalen Datenbytes
 
-
-| Stecktypen          |  Feldbus-Arten |
-:-------------------------:|:-------------------------:
- ![](https://t3.lappcdn.com/fileadmin/_processed_/8/0/csm_IC_FELDBUS_BESCHNITTEN_12dab6f918.png) | ![](https://www.itwissen.info/lex-images/Aufbau-eines-Feldbusses.png) 
+![](https://www.itwissen.info/lex-images/Aufbau-eines-Feldbusses.png) 
  
 Der CAN-Bus läuft **NICHT** im Master-Slave Betrieb, dazu später mehr.
 
