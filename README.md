@@ -58,6 +58,7 @@ icon: https://upload.wikimedia.org/wikipedia/commons/d/de/Logo_TU_Bergakademie_F
 * Jahrtausendwende bringt Weiterentwicklungen: Subsystem LIN (Local Interconnect Network)
 * Große Weiterentwicklung in 2012 mit vergrößertem Datenfeld auf 64 Byte (urspr. 8)
 
+![](https://cdn.discordapp.com/attachments/667797054474420238/985571641411129404/unknown.png)
 
 ********************************************************************************
 
@@ -76,9 +77,20 @@ ditaa
 +------------------------+   +---------------------+   +-----------+
 @enduml
 ```
+Feldbusse sind die Weiterentwicklung der Parallelverdrahtung um den Kabelbedarf zu mindern. 
+Die Bezeichnung 'Feldbus' ist ein Überbegriffmeint dabei nur, dass ein Master-Slave-Betrieb verwendet wird. Desweiteren variieren Feldbusse in ihrer/n
 
-* Nur ein Kabel
-* Master-Slave-Betrieb
+* Topologie (Stern, Linie, Baum)
+* Übertragungsprotokollen
+* maximalen Kabellänge
+* maximalen Datenbytes
+
+
+| Stecktypen          |  Feldbus-Arten |
+:-------------------------:|:-------------------------:
+ ![](https://t3.lappcdn.com/fileadmin/_processed_/8/0/csm_IC_FELDBUS_BESCHNITTEN_12dab6f918.png) | ![](https://www.itwissen.info/lex-images/Aufbau-eines-Feldbusses.png) 
+ 
+Der CAN-Bus läuft **NICHT** im Master-Slave Betrieb, dazu später mehr.
 
 ********************************************************************************
 
