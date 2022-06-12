@@ -79,16 +79,16 @@ ditaa
 ```
 
 Feldbusse sind die Weiterentwicklung der Parallelverdrahtung um den Kabelbedarf zu mindern. 
-Die Bezeichnung "Feldbus" ist ein Überbegriffmeint dabei nur, dass ein Master-Slave-Betrieb verwendet wird. Desweiteren variieren Feldbusse in ihrer/n
+Die Bezeichnung "Feldbus" meint dabei nur, dass ein Master-Slave-Betrieb verwendet wird. Desweiteren variieren Feldbusse in ihrer/n
 
 * Topologie (Stern, Linie, Baum)
 * Übertragungsprotokollen
 * maximalen Kabellänge
 * maximalen Datenbytes
 
-![](https://www.itwissen.info/lex-images/Aufbau-eines-Feldbusses.png) 
+![](https://cdn.discordapp.com/attachments/667797054474420238/985578194444894268/unknown.png) 
  
-Der CAN-Bus läuft **NICHT** im Master-Slave Betrieb, dazu später mehr.
+Der CAN-Bus läuft NICHT im Master-Slave Betrieb, dazu später mehr.
 
 
 ********************************************************************************
