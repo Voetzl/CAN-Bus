@@ -86,7 +86,9 @@ Die Bezeichnung "Feldbus" meint dabei nur, dass ein Master-Slave-Betrieb verwend
 * maximalen Kabellänge
 * maximalen Datenbytes
 
-![](https://cdn.discordapp.com/attachments/667797054474420238/985578194444894268/unknown.png) 
+| Italic             |  Block letters |
+:-------------------------:|:-------------------------:
+![](https://cdn.discordapp.com/attachments/667797054474420238/985578194444894268/unknown.png) | ![](https://cdn.discordapp.com/attachments/667797054474420238/985578863235047494/unknown.png) 
  
 Der CAN-Bus läuft NICHT im Master-Slave Betrieb, dazu später mehr.
 
