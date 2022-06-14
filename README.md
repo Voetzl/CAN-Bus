@@ -91,8 +91,6 @@ entworfen. Zusätzlich unterscheiden sich die Systeme in ihrer/n
 Beim CAN-Bus ist kein Steuerungsrechner notwendig, er zählt daher auch nicht zu den "klassischen" Feldbussen.
 
 ![](https://cdn.discordapp.com/attachments/667797054474420238/985578194444894268/unknown.png)
- 
-Notiz (LÖSCHEN): Diese Feldbus-Entwicklung in der Industrie war gewesen. Dort war der Master-Slave Betrieb immer notwendig und sinnvoll. Für Kraftfahrzeuge gab es wiederum andere Anforderungen -- Der CAN Bus wurde entworfen
 
 ********************************************************************************
 
