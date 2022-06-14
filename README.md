@@ -98,9 +98,27 @@ Notiz (LÖSCHEN): Diese Feldbus-Entwicklung in der Industrie war gewesen. Dort w
 
 ## Elektrische Funktionsweise
 
+                    {{0-1}}
+********************************************************************************
+
+Das "Can-Bus-Kabel" besteht aus zwei ineinander verdrehten Drähten. Eine gute Abschirmung ist nicht zwingend notwendig.
+
+Bei der CAN-Übertragung heißt die logische 1 "rezessiv", die logische 0 "dominant", wobei der rezessive Zustand der Ruhezustand ist.
+
+![](https://cdn.discordapp.com/attachments/667797054474420238/986333441253588992/unknown.png)
+
+********************************************************************************
+
+                                  {{0-2}}
+********************************************************************************
+
+![](https://cdn.discordapp.com/attachments/667797054474420238/986334487904387162/unknown.png)
+
+
 Can High, Can Low, Überprüfung mit Oszilloskop, rezessiv, dominant.
 
-Unterpunkt (0-2 für alles??): Verschiedene Übertragunsgeschwindigkeiten --> Verschiedene Potentiale
+
+********************************************************************************
 
 ## Datenübertragung
 
