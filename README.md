@@ -98,24 +98,20 @@ Notiz (LÖSCHEN): Diese Feldbus-Entwicklung in der Industrie war gewesen. Dort w
 
 ## Elektrische Funktionsweise
 
-                    {{0-1}}
-********************************************************************************
+Das "Can-Bus-Kabel" besteht aus zwei ineinander verdrehten Drähten. Eine gute Abschirmung ist nicht zwingend notwendig.#
 
-Das "Can-Bus-Kabel" besteht aus zwei ineinander verdrehten Drähten. Eine gute Abschirmung ist nicht zwingend notwendig.
+![](https://cdn.discordapp.com/attachments/667797054474420238/986336641914396773/unknown.png)
 
-Bei der CAN-Übertragung heißt die logische 1 "rezessiv", die logische 0 "dominant", wobei der rezessive Zustand der Ruhezustand ist.
+{{1}} Bei der CAN-Übertragung heißt die logische 1 "rezessiv", die logische 0 "dominant", wobei der rezessive Zustand der Ruhezustand ist. Wird eine logische 0 gesendet, wechselt CANH aus ein höheres Spannungsniveau, CANL auf ein niedrigeres. 
 
-![](https://cdn.discordapp.com/attachments/667797054474420238/986333441253588992/unknown.png)
+{{1}} ![](https://cdn.discordapp.com/attachments/667797054474420238/986333441253588992/unknown.png)
 
-********************************************************************************
+{{2}} Beide Stränge müssen dabei perfekt gespiegelt laufen!
 
-                                  {{0-2}}
-********************************************************************************
-
-![](https://cdn.discordapp.com/attachments/667797054474420238/986334487904387162/unknown.png)
+{{2}} ![](https://cdn.discordapp.com/attachments/667797054474420238/986334487904387162/unknown.png)
 
 
-Can High, Can Low, Überprüfung mit Oszilloskop, rezessiv, dominant.
+{{2}} Can High, Can Low, Überprüfung mit Oszilloskop, rezessiv, dominant.
 
 
 ********************************************************************************
