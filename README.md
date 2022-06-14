@@ -108,11 +108,17 @@ Das "Can-Bus-Kabel" besteht aus zwei ineinander verdrehten Drähten. Eine gute A
 
 {{2}} Beide Stränge müssen dabei perfekt gespiegelt laufen!
 
-{{2}} ![](https://cdn.discordapp.com/attachments/667797054474420238/986334487904387162/unknown.png)
+                                  {{2-3}}
+********************************************************************************
 
+![](https://cdn.discordapp.com/attachments/667797054474420238/986334487904387162/unknown.png)
 
-{{2}} Can High, Can Low, Überprüfung mit Oszilloskop, rezessiv, dominant.
+********************************************************************************
 
+                                  {{3-4}}
+********************************************************************************
+
+![](https://cdn.discordapp.com/attachments/667797054474420238/986340084594909214/unknown.png)
 
 ********************************************************************************
 
