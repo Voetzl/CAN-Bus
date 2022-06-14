@@ -35,11 +35,12 @@ icon: https://upload.wikimedia.org/wikipedia/commons/d/de/Logo_TU_Bergakademie_F
 
 | Kurze Übersicht |                                   |
 | --------------- | --------------------------------- |
-| Geschichte und Einordnung    |                    |
+| Hintergründe    | Geschichte und Einordnung         |
 | Aufbau          | Elektrische Funktionsweise        |
-| Datenübertragung | Datenpakete, Prioritäten, Getriggerte Komponenten|
+| Datenübertragung | Datenpakete, Prioritäten, Getriggerte Komponenten |
 | Anwendung IRL   | Lichtanlage Golf                  |
-| CAN auf dem STM32    | CAN-Transceiver                   |
+| CAN auf dem STM32 | CAN-Transceiver                 |            
+| Quallen         |                                   |
 | Anwendung TFY   | Überraschung :)                   |
 
 
@@ -116,7 +117,7 @@ Das "Can-Bus-Kabel" besteht aus zwei ineinander verdrehten Drähten. Eine gute A
                                   {{3-4}}
 ********************************************************************************
 
-![](https://cdn.discordapp.com/attachments/667797054474420238/986340084594909214/unknown.png)
+![](https://cdn.discordapp.com/attachments/667797054474420238/986342156736278578/unknown.png)
 
 ********************************************************************************
 
