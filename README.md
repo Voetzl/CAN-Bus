@@ -22,8 +22,8 @@ icon: https://upload.wikimedia.org/wikipedia/commons/d/de/Logo_TU_Bergakademie_F
 | Parameter                | Kursinformationen                                                                                                                                                                    |
 | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | **Veranstaltung:**       | `Praktikum Digitale Systeme`                                                                                                                                                      |
-| **Hochschule:**          | `Technische Universität Freiberg`                                                                                                                                                    |
-| **Inhalte:**             | `Einführung in Komponenten und Funktionsweise des CAN-Bus`                                                                                            |
+| **Hochschule:**          | `Technische Universität Bergakademie Freiberg`                                                                                                                                                    |
+| **Inhalte:**             | `Einführung in die Funktionsweise des CAN-Bus`                                                                                            |
 | **Link auf den GitHub:** | [https://github.com/Voetzl/CAN-Bus](https://github.com/Voetzl/CAN-Bus) |
 | **Autoren**              | @author                                                                                                                                                                              |
 
@@ -97,7 +97,7 @@ Beim CAN-Bus ist kein Steuerungsrechner notwendig, er zählt daher auch nicht zu
 
 ## Elektrische Funktionsweise
 
-Das "Can-Bus-Kabel" besteht aus zwei ineinander verdrehten Drähten. Eine gute Abschirmung ist nicht zwingend notwendig.#
+Das "Can-Bus-Kabel" besteht aus zwei ineinander verdrehten Drähten. Eine gute Abschirmung ist nicht zwingend notwendig.
 
 ![](https://cdn.discordapp.com/attachments/667797054474420238/986336641914396773/unknown.png)
 
@@ -123,11 +123,16 @@ Das "Can-Bus-Kabel" besteht aus zwei ineinander verdrehten Drähten. Eine gute A
 
 ## Datenübertragung
 
-Aufbau eines Datenübertragungspakets
+**Aufbau eines Datenübertragungspakets**
+
+![](https://cdn.discordapp.com/attachments/667797054474420238/986728231396868176/unknown.png)
+
 
 Prioriätetensetzung
 
 Wiederholung bei höherer Priorität / bei Fehlerhafter Übertragung
+
+### Fehlererkennung 
 
 ## Beispiel GOLF
 
