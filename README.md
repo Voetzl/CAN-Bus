@@ -142,12 +142,13 @@ Wiederholung bei höherer Priorität / bei Fehlerhafter Übertragung
 ********************************************************************************
 
 
-
-## Beispiel GOLF
-
 ### Fehlererkennung 
 
 ### Priorsierung
+
+
+## Beispiel GOLF
+
 
 --> Auch noch Vorteil ggü. alles verdrahten
 --> In kurz: Also da sendet jetzt hier die Lichtanlage einfach immer ihren Status, den kann man auch überschreiben...
