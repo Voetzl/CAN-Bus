@@ -127,6 +127,10 @@ Das "Can-Bus-Kabel" besteht aus zwei ineinander verdrehten Drähten. Eine gute A
 
 ![](https://cdn.discordapp.com/attachments/667797054474420238/986730062294437928/unknown.png)
 
+---
+
+---
+
 ![](https://cdn.discordapp.com/attachments/667797054474420238/986741135638659072/unknown.png)
 
 ### Resyncronisation
