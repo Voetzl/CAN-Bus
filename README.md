@@ -137,7 +137,7 @@ Das "Can-Bus-Kabel" besteht aus zwei ineinander verdrehten Drähten. Eine gute A
 | IDE             | 1 bit   | Identifier Extrension (CAN2.0 A / B) |
 | r0              | 1 bit   | "reserviert", in KFZ ungenutzt   |            
 | DLC             | 4 bits  | data length code                 |
-| DATA            | 1-8 byte | Nur Byte-weise                  |
+| DATA            | 64 bit (max) | 1 - 8 Byte                  |
 | CRC             | 15 bits |  14 Fehlererkennungsbits, 1 Delimiter |
 | ACK             | 2 bits  | 1 Acknowledge, 1 Delimiter       |
 | EOF             | 7 bits  | end of field, rezessiv           |
