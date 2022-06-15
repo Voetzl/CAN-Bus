@@ -127,11 +127,26 @@ Das "Can-Bus-Kabel" besteht aus zwei ineinander verdrehten Drähten. Eine gute A
 
 ![](https://cdn.discordapp.com/attachments/667797054474420238/986730062294437928/unknown.png)
 
----
-
----
-
 ![](https://cdn.discordapp.com/attachments/667797054474420238/986741135638659072/unknown.png)
+
+| Feld            | Größe   | Bedeutung                        |
+| --------------- | ------- | ---------------------------------|
+| Start           | 1 bit   | dominant, zur Syncronisation     |
+| Identifier      | 11 bits | Elektrische Funktionsweise       |
+| RTR             | 1 bit   | Anforderung (dominant) / Senden  |
+| IDE             | 1 bit   | Identifier Extrension (CAN2.0 A / B) |
+| r0              | 1 bit   | "reserviert", in KFZ ungenutzt   |            
+| DLC             | 4 bits  | data length code                 |
+| DATA            | 1-8 byte | Nur Byte-weise                  |
+| CRC             | 15 bits |  14 Fehlererkennungsbits, 1 Delimiter |
+| ACK             | 2 bits  | 1 Acknowledge, 1 Delimiter       |
+| EOF             | 7 bits  | end of field, rezessiv           |
+| IFS             | 3 / 7 bits | rezessiv, Puffer-Feld!        | 
+
+
+
+
+
 
 ### Resyncronisation
 
