@@ -125,12 +125,20 @@ Das "Can-Bus-Kabel" besteht aus zwei ineinander verdrehten Drähten. Eine gute A
 
 **Aufbau eines Datenübertragungspakets**
 
+********************************************************************************
+
 ![](https://cdn.discordapp.com/attachments/667797054474420238/986728231396868176/unknown.png)
 
+********************************************************************************
+                                  {{0-1}}
+********************************************************************************
 
 Prioriätetensetzung
 
 Wiederholung bei höherer Priorität / bei Fehlerhafter Übertragung
+
+
+********************************************************************************
 
 ### Fehlererkennung 
 
