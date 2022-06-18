@@ -37,7 +37,7 @@ icon: https://upload.wikimedia.org/wikipedia/commons/d/de/Logo_TU_Bergakademie_F
 | --------------- | --------------------------------- |
 | Hintergründe    | Geschichte und Einordnung         |
 | Aufbau          | Elektrische Funktionsweise        |
-| Datenübertragung | Datenpakete, Prioritäten, Getriggerte Komponenten |
+| Datenübertragung | Datenpakete, Prioritäten, Synchronisation, Priorisierung |
 | Anwendung IRL   | Lichtanlage Golf                  |
 | CAN auf dem STM32 | CAN-Transceiver                 |            
 | Quallen         |                                   |
@@ -207,7 +207,7 @@ Das "Can-Bus-Kabel" besteht aus zwei ineinander verdrehten Drähten. Eine gute A
 
 > Ein CAN-Bit ist nicht einfach nur ein Bit!
 
-![] (https://cdn.discordapp.com/attachments/667797054474420238/987729793216823366/unknown.png)
+![](https://cdn.discordapp.com/attachments/667797054474420238/987729793216823366/unknown.png)
  
 | Segment         | Länge                             |
 | --------------- | --------------------------------- |
@@ -269,11 +269,13 @@ Das "Can-Bus-Kabel" besteht aus zwei ineinander verdrehten Drähten. Eine gute A
 
 Normalerweise gilt: Wer zuerst kommt, der kommt dran. Stauen sich während einer Übermittlung jedoch Nachrichten an, starten diese danach zum selben Zeitpunkt.
 
-![] (https://cdn.discordapp.com/attachments/667797054474420238/987725955927773204/unknown.png)
+![](https://cdn.discordapp.com/attachments/667797054474420238/987725955927773204/unknown.png)
 
 Die Sender, der dabei den niedrigsten Identifier sendet, darf weitersenden.
 
-> Extended-CAN-Identifier haben dabei immer eine niedrigere Prioriät
+> Extended-CAN-Identifier haben immer eine niedrigere Prioriät!
+
+> **Bei Überlastung des CANs kann es schnell passieren, dass manche Sender nie "zu Wort" kommen!**
 
 
 ## Beispiel GOLF
