@@ -27,7 +27,9 @@ icon: https://upload.wikimedia.org/wikipedia/commons/d/de/Logo_TU_Bergakademie_F
 | **Link auf den GitHub:** | [https://github.com/Voetzl/CAN-Bus](https://github.com/Voetzl/CAN-Bus) |
 | **Autoren**              | @author                                                                                                                                                                              |
 
-![](https://cdn.discordapp.com/attachments/667797054474420238/985561027032793178/unknown.png)
+![](https://cdn.discordapp.com/attachments/667797054474420238/987747554710138940/20220614_234617.jpg)
+![](https://cdn.discordapp.com/attachments/667797054474420238/987748058852888628/20220428_235124.jpg)
+
 
 ---
 
@@ -38,10 +40,12 @@ icon: https://upload.wikimedia.org/wikipedia/commons/d/de/Logo_TU_Bergakademie_F
 | Hintergründe    | Geschichte und Einordnung         |
 | Aufbau          | Elektrische Funktionsweise        |
 | Datenübertragung | Datenpakete, Prioritäten, Synchronisation, Priorisierung |
-| Anwendung IRL   | Lichtanlage Golf                  |
-| CAN auf dem STM32 | CAN-Transceiver                 |            
+| Anwendung IRL   | CAN im Golf                       |
+| CAN auf Microcontrollern | CAN RX/TX, CAN-Transceiver |            
 | Quallen         |                                   |
 | Anwendung TFY   | Überraschung :)                   |
+
+![](https://cdn.discordapp.com/attachments/667797054474420238/985561027032793178/unknown.png)
 
 
 ## Geschichte und Einordnung
@@ -292,9 +296,13 @@ Schalten der Lichtanlage ändert "Data" der Nachricht
 
 ********************************************************************************
 
-## Anwendung des CAN-Protokolls auf dem STM32
+## Anwendung des CAN-Protokolls auf Microcontrollern
 
 --> Eigentlich ist hier die Transceiver-Erklärung dann so drin...
+
+### Can-Transceiver
+
+
 
 ## Mein Ultra-Tolles-Anwendungsbeispiel
 
