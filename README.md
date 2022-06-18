@@ -311,7 +311,7 @@ Schalten der Lichtanlage ändert "Data" der Nachricht
 
 {{0}} Datensammlung für die Präsentation fand zwischen 12.06 - 19.06 statt. In diesem Zeitraum wurden die Informationen auf u.g. Websiten gefunden. Bei abweichenden Informationen wurde jeweils eine dritte Quelle zum Vergleich herangezogen.
 
-                                  {{1-2}}
+                                  {{0-1}}
 ********************************************************************************
 
 **Geschichte und Einordnung**
@@ -325,7 +325,7 @@ Teil 2:  Text: [Feldbus Grundlagen und Erklärung – KUNBUS GmbH](https://www.k
          
 ********************************************************************************
 
-                                  {{2-3}}
+                                  {{1-2}}
 ********************************************************************************
 
 **Elektronische Funktionsweise**
@@ -337,7 +337,7 @@ Teil 2:  Text: [Feldbus Grundlagen und Erklärung – KUNBUS GmbH](https://www.k
 
 ********************************************************************************
 
-                                  {{3-4}}
+                                  {{2-3}}
 ********************************************************************************
 
 **Datenübertragung**
@@ -363,7 +363,7 @@ Teil 2:  Text: [Feldbus Grundlagen und Erklärung – KUNBUS GmbH](https://www.k
          
 ********************************************************************************
 
-                                  {{4-5}}
+                                  {{3-4}}
 ********************************************************************************
 
 **Golf-Beispiel**
@@ -372,7 +372,7 @@ Teil 2:  Text: [Feldbus Grundlagen und Erklärung – KUNBUS GmbH](https://www.k
 
 ********************************************************************************
 
-                                  {{5-6}}
+                                  {{4-5}}
 ********************************************************************************
 
 **Anwendung auf dem Microcontroller**
