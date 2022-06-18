@@ -185,19 +185,19 @@ Das "Can-Bus-Kabel" besteht aus zwei ineinander verdrehten Drähten. Eine gute A
 
 **Typen von Nachrichten**
 
-***The Data Frame***
+ ***The Data Frame***
 
 --> Normale Übertragung
 
-***The Remote Frame***
+ ***The Remote Frame***
 
 --> RTR rezessiv, kein Datenfeld 
 
-***The Error Frame***
+ ***The Error Frame***
 
 --> Spezieller Frame, wird bei Fehler ausgelöst
 
-***The Overload Frame***
+ ***The Overload Frame***
 
 --> Buffer-Wirkung: Wird bei Überlastung zur Verzögerung genutzt
 
@@ -208,6 +208,37 @@ Das "Can-Bus-Kabel" besteht aus zwei ineinander verdrehten Drähten. Eine gute A
 
 ### Fehlererkennung 
 
+
+{{0}} Das CAN-Protokoll beinhaltet 5 Fehlerüberprüfungsmethoden. Drei davon sind aus "Nachrichten-Level", zwei davon auf "Bit-Level". Sobald einer der Fehler auftritt wird ein ***Error-Frame*** generiert. 
+{{0}} Da immer alle Teilnehmer (auch der Sender selbst) mitlesen wird eine Fehlererkennung sicher gewährleistet.
+
+                                  {{1-2}}
+********************************************************************************
+
+**Fehler auf Nachrichten-Level**
+
+- 15 + 1 CRC Bits
+- 1 + 1 ACK Bits
+- Form check: SOF, EOF, ACK delimiter und CRC delimiter müssen rezessiv sein
+
+> **Die Delimiter-Bits sind die Bits, die die CRC und ACK bits verifizieren, da diese sich logischerweise nicht bereits selbst kontrollieren können**
+
+********************************************************************************
+
+                                  {{2-3}}
+********************************************************************************
+
+**Fehler auf Bit-Level**
+
+- Sender schaut direkt, ob er das gesandte auch lesen kann. Ausnahme sind die Identifier-Bits und das ACK-Bit
+- Bit stuffing-Regel: Nach fünf folgenden Bits gleichen logischen Levels **muss** ein anderes folgen! 
+
+********************************************************************************
+
+                                  {{3-4}}
+********************************************************************************
+
+> Bei einem erkannten Fehler wird der erwähnte ***Error-Frame*** erzeugt. Dieser besteht aus aus 6 dominanten Bits (<-> Bit-stuffing) und löst bei allen weiteren Teilnehmern einen Fehler aus. Ein ***Error-Frame*** kann also aus 6-12 dominanten Bits bestehen. Daraufhin folgen 8 rezessive Bits und eine Neusendung der selben Nachricht wird garantiert! 
 
 ### Priorsierung
 
