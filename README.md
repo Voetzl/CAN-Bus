@@ -309,7 +309,7 @@ Schalten der Lichtanlage ändert "Data" der Nachricht
 
 ## Quallen
 
-{{0}} Datensammlung für die Präsentation fand zwischen 12.06 - 18.06 statt. In diesem Zeitraum wurden die Informationen auf u.g. Websiten gefunden. Bei abweichenden Informationen wurde jeweils eine dritte Quelle zum Vergleich herangezogen.
+{{0}} Datensammlung für die Präsentation fand zwischen 12.06 - 19.06 statt. In diesem Zeitraum wurden die Informationen auf u.g. Websiten gefunden. Bei abweichenden Informationen wurde jeweils eine dritte Quelle zum Vergleich herangezogen.
 
                                   {{1-2}}
 ********************************************************************************
