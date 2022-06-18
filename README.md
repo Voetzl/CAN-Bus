@@ -126,7 +126,7 @@ Das "Can-Bus-Kabel" besteht aus zwei ineinander verdrehten Drähten. Eine gute A
 
 **Aufbau eines Datenübertragungspakets**
 
-{{1}} ![](https://cdn.discordapp.com/attachments/667797054474420238/986730062294437928/unknown.png)
+{{0}} ![](https://cdn.discordapp.com/attachments/667797054474420238/986730062294437928/unknown.png)
 
                                   {{1-2}}
 ********************************************************************************
@@ -165,11 +165,11 @@ Das "Can-Bus-Kabel" besteht aus zwei ineinander verdrehten Drähten. Eine gute A
 | --------------- | ------- | ---------------------------------|
 | Start           | 1 bit   | dominant, zur Syncronisation     |
 | Identifier      | 11 bits | Prioritätenübermittlung          |
-| **SRR**         | 1 bit   | Ersetzt RTR, Platzhalterfunktion |
-| **IDE**         | 1 bit   | Rezessiv weißt auf mehr Identifier hin  |
-| **Identifier**  | 18 bit  | 18 weitere Identifier-bits       |
+| **SRR**         | **1 bit**   | **Ersetzt RTR, Platzhalterfunktion** |
+| **IDE**         | **1 bit**   | **Rezessiv weißt auf mehr Identifier hin**  |
+| **Identifier**  | **18 bit**  | **18 weitere Identifier-bits**       |
 | RTR             | 1 bit   | Anforderung (dominant) / Senden  |
-| **r1**          | 1 bit   | "reserviert", in KFZ ungenutzt   |
+| **r1**          | **1 bit**   | **"reserviert", in KFZ ungenutzt**   |
 | r0              | 1 bit   | "reserviert", in KFZ ungenutzt   |            
 | DLC             | 4 bits  | data length code                 |
 | DATA            | 64 bit (max) | 1 - 8 Byte                  |
@@ -193,6 +193,7 @@ Das "Can-Bus-Kabel" besteht aus zwei ineinander verdrehten Drähten. Eine gute A
 
 ***The Overload Frame***
 
+********************************************************************************
 
 ### Resyncronisation
 
