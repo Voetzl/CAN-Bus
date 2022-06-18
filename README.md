@@ -121,22 +121,31 @@ Das "Can-Bus-Kabel" besteht aus zwei ineinander verdrehten Drähten. Eine gute A
 
 ********************************************************************************
 
-### Neue Überschrift
 
 ## Datenübertragung
 
 **Aufbau eines Datenübertragungspakets**
 
-![](https://cdn.discordapp.com/attachments/667797054474420238/986730062294437928/unknown.png)
+{{1}} ![](https://cdn.discordapp.com/attachments/667797054474420238/986730062294437928/unknown.png)
+
+                                  {{1-2}}
+********************************************************************************
 
 ![](https://cdn.discordapp.com/attachments/667797054474420238/986741135638659072/unknown.png)
+
+********************************************************************************
+
+                                  {{2-3}}
+********************************************************************************
+
+**CAN 2.0A / Standard-CAN**
 
 | Feld            | Größe   | Bedeutung                        |
 | --------------- | ------- | ---------------------------------|
 | Start           | 1 bit   | dominant, zur Syncronisation     |
-| Identifier      | 11 bits | Elektrische Funktionsweise       |
+| Identifier      | 11 bits | Prioritätenübermittlung          |
 | RTR             | 1 bit   | Anforderung (dominant) / Senden  |
-| IDE             | 1 bit   | Identifier Extrension (CAN2.0 A / B) |
+| IDE             | 1 bit   | Identifier Extension (CAN2.0 A / B) |
 | r0              | 1 bit   | "reserviert", in KFZ ungenutzt   |            
 | DLC             | 4 bits  | data length code                 |
 | DATA            | 64 bit (max) | 1 - 8 Byte                  |
@@ -145,9 +154,44 @@ Das "Can-Bus-Kabel" besteht aus zwei ineinander verdrehten Drähten. Eine gute A
 | EOF             | 7 bits  | end of field, rezessiv           |
 | IFS             | 3 / 7 bits | rezessiv, Puffer-Feld!        | 
 
+********************************************************************************
 
+                                  {{3-4}}
+********************************************************************************
 
+**CAN 2.0B / Extended CAN**
 
+| Feld            | Größe   | Bedeutung                        |
+| --------------- | ------- | ---------------------------------|
+| Start           | 1 bit   | dominant, zur Syncronisation     |
+| Identifier      | 11 bits | Prioritätenübermittlung          |
+| **SRR**         | 1 bit   | Ersetzt RTR, Platzhalterfunktion |
+| **IDE**         | 1 bit   | Rezessiv weißt auf mehr Identifier hin  |
+| **Identifier**  | 18 bit  | 18 weitere Identifier-bits       |
+| RTR             | 1 bit   | Anforderung (dominant) / Senden  |
+| **r1**          | 1 bit   | "reserviert", in KFZ ungenutzt   |
+| r0              | 1 bit   | "reserviert", in KFZ ungenutzt   |            
+| DLC             | 4 bits  | data length code                 |
+| DATA            | 64 bit (max) | 1 - 8 Byte                  |
+| CRC             | 15 bits |  14 Fehlererkennungsbits, 1 Delimiter |
+| ACK             | 2 bits  | 1 Acknowledge, 1 Delimiter       |
+| EOF             | 7 bits  | end of field, rezessiv           |
+| IFS             | 3 / 7 bits | rezessiv, Puffer-Feld!        | 
+
+********************************************************************************
+
+                                  {{4-5}}
+********************************************************************************
+
+**Typen von Nachrichten**
+
+***The Data Frame***
+
+***The Remote Frame***
+
+***The Error Frame***
+
+***The Overload Frame***
 
 
 ### Resyncronisation
