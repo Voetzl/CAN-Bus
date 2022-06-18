@@ -269,13 +269,37 @@ Die Sender, der dabei den niedrigsten Identifier sendet, darf weitersenden.
 > **Bei Überlastung des CANs kann es schnell passieren, dass manche Sender nie "zu Wort" kommen!**
 
 
-## Beispiel GOLF
+## Beispiel Lichtanlage GOLF V
 
+Schalten der Lichtanlage ändert "Data" der Nachricht
 
---> Auch noch Vorteil ggü. alles verdrahten
---> In kurz: Also da sendet jetzt hier die Lichtanlage einfach immer ihren Status, den kann man auch überschreiben...
---> Problem bei Überlastung
---Video am Ende mit einbetten
+                                  {{1-2}}
+********************************************************************************
+
+![](https://cdn.discordapp.com/attachments/667797054474420238/987742862152204408/unknown.png)
+
+********************************************************************************
+
+                                  {{2-3}}
+********************************************************************************
+
+![](https://cdn.discordapp.com/attachments/667797054474420238/987741110577295370/unknown.png)
+
+********************************************************************************
+
+                                  {{3-4}}
+********************************************************************************
+
+![](https://cdn.discordapp.com/attachments/667797054474420238/987742290380460043/unknown.png)
+
+********************************************************************************
+
+                                  {{3-4}}
+********************************************************************************
+
+![](https://www.youtube.com/watch?v=KIJFfHlRWNg)
+
+********************************************************************************
 
 ## Anwendung des CAN-Protokolls auf dem STM32
 
