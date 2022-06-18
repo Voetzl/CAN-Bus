@@ -299,17 +299,95 @@ Schalten der Lichtanlage ändert "Data" der Nachricht
 
 ********************************************************************************
 
-## Anwendung des CAN-Protokolls auf Microcontrollern
+## Anwendung des CAN-Protokolls auf dem Microcontroller
 
 --> Eigentlich ist hier die Transceiver-Erklärung dann so drin...
 
 ### Can-Transceiver
 
+![](https://cdn.discordapp.com/attachments/667797054474420238/987747554122956830/20220614_234545.jpg)
 
+## Quallen
 
-## Mein Ultra-Tolles-Anwendungsbeispiel
+Datensammlung für die Präsentation fand zwischen 12.06 - 18.06 statt. In diesem Zeitraum wurden die Informationen auf u.g. Websiten gefunden. Bei abweichenden Informationen wurde jeweils eine dritte Quelle zum Vergleich herangezogen.
 
---> Fotos auf Unterseite...
+                                  {{1-2}}
+********************************************************************************
 
-## Quellen
+**Geschichte und Einordnung**
+
+Teil 1:  Text: [CAN- Historie, Standards und Eigenschaften (kunbus.de)](https://www.kunbus.de/can-historie-standards-und-eigenschaften.html)
+	Bild: [Zeitlinien-Bild](https://cdn.shopify.com/s/files/1/0579/8032/1980/files/can-bus-history-timeline-controller-area-network.svg?v=1633690040)
+
+Teil 2:  Text: [Feldbus Grundlagen und Erklärung – KUNBUS GmbH](https://www.kunbus.de/feldbus-grundlagen.html)
+               [Industrielle Kommunikation | Feldbus | LAPP (lappkabel.de)](https://www.lappkabel.de/branchen/industrielle-kommunikation/feldbus.html#:~:text=Als%20Feldbus%20bezeichnet%20man%20ein,Aktoren%20st%C3%B6rungsfrei%20Informationen%20austauschen%20k%C3%B6nnen.)
+         Bild: [Feldbus-Aufbau](https://www.itwissen.info/lex-images/Aufbau-eines-Feldbusses.png)
+         
+********************************************************************************
+
+                                  {{2-3}}
+********************************************************************************
+
+**Elektronische Funktionsweise**
+
+         Bild: [CAN-Bus Kabel & Leitungen nach ISO 11898-2 (sab-kabel.de)](https://www.sab-kabel.de/kabel-konfektion-temperaturmesstechnik/kabel-und-leitungen/buskabel-und-leitungen/can-bus-kabel-leitungen.html)
+         Text + restl. Bilder:      [How CAN bus works | How data transmitted on CAN bus](https://www.youtube.com/watch?v=EIVQzv6-LRo)
+                                    [CAN-BUS Grundlagen - Diagnose am Fahrzeug](https://www.youtube.com/watch?v=izVTPsujT8U)
+                                    Eigenproduktion "krasse paint.net Skills"
+
+********************************************************************************
+
+                                  {{3-4}}
+********************************************************************************
+
+**Datenübertragung**
+         
+         Übergreifend: [Introduction to the Controller Area Network (CAN) (Rev. B)](https://www.ti.com/lit/an/sloa101b/sloa101b.pdf?ts=1655558654849&ref_url=https%253A%252F%252Fwww.google.com%252F#:~:text=Identifier%2DThe%20Standard%20CAN%2011,value%2C%20the%20higher%20its%20priority.&text=RTR%E2%80%93The%20single%20remote%20transmission,is%20required%20from%20another%20node.)
+         
+         Text:    [canbus.pdf (mikrocontroller.net)](https://www.mikrocontroller.net/attachment/6819/canbus.pdf)
+         Bilder:  [CAN Protokoll Aufbau und Funktion | der Berufsschullehrer](https://www.youtube.com/watch?v=ak03HkdX1Cw)
+         
+*Synchronisation*
+
+         Text / Bild:      [CAN Bit Timing (kvaser.com)](https://www.kvaser.com/about-can/the-can-protocol/can-bit-timing/)
+                           [CAN Bit Time Calculation (can-wiki.info)](http://www.bittiming.can-wiki.info/)
+                  
+
+*Fehlererkennung*
+
+         s. übergreifend
+
+*Priorisierung*
+         
+         s. übergreifend / eigenes Verständnis
+         
+********************************************************************************
+
+                                  {{4-5}}
+********************************************************************************
+
+**Golf-Beispiel**
+
+         Text / Bilder: [Praktikum CAN-Bus am Fahrzeug (Beispiel Beleuchtung Golf V)](https://www.youtube.com/watch?v=KIJFfHlRWNg)
+
+********************************************************************************
+
+                                  {{5-6}}
+********************************************************************************
+
+**Anwendung auf dem Microcontroller**
+
+         Text:
+         Bild:
+         
+********************************************************************************         
+
+## Ist es ein Auto?
+
+Code Implementierung 1
+
+Code Implementierung 2
+
+Code Implementierung 3
+
 
