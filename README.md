@@ -185,31 +185,54 @@ Das "Can-Bus-Kabel" besteht aus zwei ineinander verdrehten Drähten. Eine gute A
 
 **Typen von Nachrichten**
 
- ***The Data Frame***
+ *The Data Frame*
 
 --> Normale Übertragung
 
- ***The Remote Frame***
+ *The Remote Frame*
 
 --> RTR rezessiv, kein Datenfeld 
 
- ***The Error Frame***
+ *The Error Frame*
 
 --> Spezieller Frame, wird bei Fehler ausgelöst
 
- ***The Overload Frame***
+ *The Overload Frame*
 
 --> Buffer-Wirkung: Wird bei Überlastung zur Verzögerung genutzt
 
 ********************************************************************************
 
-### Resyncronisation
+### Synchronisation
 
+> Ein CAN-Bit ist nicht einfach nur ein Bit!
+
+![] (https://cdn.discordapp.com/attachments/667797054474420238/987729793216823366/unknown.png)
+ 
+| Segment         | Länge                             |
+| --------------- | --------------------------------- |
+| SYNC-SEG        | 1 Time Quantum lang, Synchronisation |
+| PROP_SEG        | Bis 8 tq einstellbar              |
+| PHASE_SEG 1     | Bis 8 tq einstellbar (Länger bei Resynchronisation) |
+| PHASE_SEG 2     | Maximal so lang wie PHASE_SEG 1 und Verarbeitungszeit |
+
+> Für einen CAN-Bus mit 1000 kbps muss der Tranceiver-Chip mit mindestens 8 MHz getaktet werden!
+
+                                  {{1-2}}
+********************************************************************************
+
+**Arten der Reynchronisation**
+
+- *Hard Synchronisation:* Neustart der Transceiver-Clock-Zeit durch diese Flanke
+- *Resynchronisation*: Kleinere Anpassungen durch SJW (Synchronisation-Jump-Width) Paramter des Transceivers
+
+********************************************************************************
 
 ### Fehlererkennung 
 
 
 {{0}} Das CAN-Protokoll beinhaltet 5 Fehlerüberprüfungsmethoden. Drei davon sind aus "Nachrichten-Level", zwei davon auf "Bit-Level". Sobald einer der Fehler auftritt wird ein ***Error-Frame*** generiert. 
+
 {{0}} Da immer alle Teilnehmer (auch der Sender selbst) mitlesen wird eine Fehlererkennung sicher gewährleistet.
 
                                   {{1-2}}
@@ -240,7 +263,17 @@ Das "Can-Bus-Kabel" besteht aus zwei ineinander verdrehten Drähten. Eine gute A
 
 > Bei einem erkannten Fehler wird der erwähnte ***Error-Frame*** erzeugt. Dieser besteht aus aus 6 dominanten Bits (<-> Bit-stuffing) und löst bei allen weiteren Teilnehmern einen Fehler aus. Ein ***Error-Frame*** kann also aus 6-12 dominanten Bits bestehen. Daraufhin folgen 8 rezessive Bits und eine Neusendung der selben Nachricht wird garantiert! 
 
+********************************************************************************
+
 ### Priorsierung
+
+Normalerweise gilt: Wer zuerst kommt, der kommt dran. Stauen sich während einer Übermittlung jedoch Nachrichten an, starten diese danach zum selben Zeitpunkt.
+
+![] (https://cdn.discordapp.com/attachments/667797054474420238/987725955927773204/unknown.png)
+
+Die Sender, der dabei den niedrigsten Identifier sendet, darf weitersenden.
+
+> Extended-CAN-Identifier haben dabei immer eine niedrigere Prioriät
 
 
 ## Beispiel GOLF
