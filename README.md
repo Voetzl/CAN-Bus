@@ -288,7 +288,7 @@ Schalten der Lichtanlage ändert "Data" der Nachricht
                                   {{3-4}}
 ********************************************************************************
 
-![](https://www.youtube.com/watch?v=KIJFfHlRWNg)
+!?[alt-text](https://www.youtube.com/watch?v=KIJFfHlRWNg)
 
 ********************************************************************************
 
