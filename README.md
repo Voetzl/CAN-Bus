@@ -168,7 +168,7 @@ Das "Can-Bus-Kabel" besteht aus zwei ineinander verdrehten Drähten. Eine gute A
 | **SRR**         | **1 bit**   | **Ersetzt RTR, Platzhalterfunktion** |
 | **IDE**         | **1 bit**   | **Rezessiv weißt auf mehr Identifier hin**  |
 | **Identifier**  | **18 bit**  | **18 weitere Identifier-bits**       |
-| RTR             | 1 bit   | Anforderung (dominant) / Senden  |
+| RTR             | 1 bit   | Anforderung (rezessiv) / Senden  |
 | **r1**          | **1 bit**   | **"reserviert", in KFZ ungenutzt**   |
 | r0              | 1 bit   | "reserviert", in KFZ ungenutzt   |            
 | DLC             | 4 bits  | data length code                 |
@@ -187,11 +187,19 @@ Das "Can-Bus-Kabel" besteht aus zwei ineinander verdrehten Drähten. Eine gute A
 
 ***The Data Frame***
 
+--> Normale Übertragung
+
 ***The Remote Frame***
+
+--> RTR rezessiv, kein Datenfeld 
 
 ***The Error Frame***
 
+--> Spezieller Frame, wird bei Fehler ausgelöst
+
 ***The Overload Frame***
+
+--> Buffer-Wirkung: Wird bei Überlastung zur Verzögerung genutzt
 
 ********************************************************************************
 
