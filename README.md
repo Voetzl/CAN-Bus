@@ -342,24 +342,24 @@ Teil 2:  Text: [Feldbus Grundlagen und Erklärung – KUNBUS GmbH](https://www.k
 
 **Datenübertragung**
          
-         Übergreifend: [Introduction to the Controller Area Network (CAN) (Rev. B)](https://www.ti.com/lit/an/sloa101b/sloa101b.pdf?ts=1655558654849&ref_url=https%253A%252F%252Fwww.google.com%252F#:~:text=Identifier%2DThe%20Standard%20CAN%2011,value%2C%20the%20higher%20its%20priority.&text=RTR%E2%80%93The%20single%20remote%20transmission,is%20required%20from%20another%20node.)
+Übergreifend: [Introduction to the Controller Area Network (CAN) (Rev. B)](https://www.ti.com/lit/an/sloa101b/sloa101b.pdf?ts=1655558654849&ref_url=https%253A%252F%252Fwww.google.com%252F#:~:text=Identifier%2DThe%20Standard%20CAN%2011,value%2C%20the%20higher%20its%20priority.&text=RTR%E2%80%93The%20single%20remote%20transmission,is%20required%20from%20another%20node.)
          
-         Text:    [canbus.pdf (mikrocontroller.net)](https://www.mikrocontroller.net/attachment/6819/canbus.pdf)
-         Bilder:  [CAN Protokoll Aufbau und Funktion | der Berufsschullehrer](https://www.youtube.com/watch?v=ak03HkdX1Cw)
+Text:    [canbus.pdf (mikrocontroller.net)](https://www.mikrocontroller.net/attachment/6819/canbus.pdf)
+Bilder:  [CAN Protokoll Aufbau und Funktion | der Berufsschullehrer](https://www.youtube.com/watch?v=ak03HkdX1Cw)
          
 *Synchronisation*
 
-         Text / Bild:      [CAN Bit Timing (kvaser.com)](https://www.kvaser.com/about-can/the-can-protocol/can-bit-timing/)
-                           [CAN Bit Time Calculation (can-wiki.info)](http://www.bittiming.can-wiki.info/)
+Text / Bild:    [CAN Bit Timing (kvaser.com)](https://www.kvaser.com/about-can/the-can-protocol/can-bit-timing/)
+		[CAN Bit Time Calculation (can-wiki.info)](http://www.bittiming.can-wiki.info/)
                   
 
 *Fehlererkennung*
 
-         s. übergreifend
+s. übergreifend
 
 *Priorisierung*
          
-         s. übergreifend / eigenes Verständnis
+s. übergreifend / eigenes Verständnis
          
 ********************************************************************************
 
@@ -368,7 +368,7 @@ Teil 2:  Text: [Feldbus Grundlagen und Erklärung – KUNBUS GmbH](https://www.k
 
 **Golf-Beispiel**
 
-         Text / Bilder: [Praktikum CAN-Bus am Fahrzeug (Beispiel Beleuchtung Golf V)](https://www.youtube.com/watch?v=KIJFfHlRWNg)
+Text / Bilder: [Praktikum CAN-Bus am Fahrzeug (Beispiel Beleuchtung Golf V)](https://www.youtube.com/watch?v=KIJFfHlRWNg)
 
 ********************************************************************************
 
@@ -377,8 +377,8 @@ Teil 2:  Text: [Feldbus Grundlagen und Erklärung – KUNBUS GmbH](https://www.k
 
 **Anwendung auf dem Microcontroller**
 
-         Text:
-         Bild:
+Text:
+Bild:
          
 ********************************************************************************         
 
