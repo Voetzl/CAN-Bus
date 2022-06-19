@@ -104,9 +104,11 @@ Beim CAN-Bus ist kein Steuerungsrechner notwendig, er zählt daher auch nicht zu
 
 ## Elektrische Funktionsweise
 
-Das "Can-Bus-Kabel" besteht aus zwei ineinander verdrehten Drähten. Eine gute Abschirmung ist nicht zwingend notwendig.
+Das "Can-Bus-Kabel" besteht aus zwei ineinander verdrehten Drähten. Eine gute Abschirmung ist nicht zwingend notwendig. Die Impedanz des Kabels muss laut ISO im Bereich zwischen 100–130 Ohm liegen.
 
 ![](https://cdn.discordapp.com/attachments/667797054474420238/986336641914396773/unknown.png)
+
+Zusätzlich müssen an den Enden Abschlusswiderstände von 120 Ohm angebracht sein. Solche "line terminations" sind keine Besonderheit des CAN-Bus und lassen sich über 
 
 {{1}} Bei der CAN-Übertragung heißt die logische 1 "rezessiv", die logische 0 "dominant", wobei der rezessive Zustand der Ruhezustand ist. Wird eine logische 0 gesendet, wechselt CANH aus ein höheres Spannungsniveau, CANL auf ein niedrigeres. 
 
@@ -126,10 +128,14 @@ Das "Can-Bus-Kabel" besteht aus zwei ineinander verdrehten Drähten. Eine gute A
 
 ![](https://cdn.discordapp.com/attachments/667797054474420238/986342156736278578/unknown.png)
 
+> Ein dominantes Bit wird von Transceivern üblicherweise ab ΔV > 2V erkannt
+
 ********************************************************************************
 
 
 ## Datenübertragung
+
+> Verbreitete CAN-Bus-Geschwindigkeiten sind 125kbit/s (Lowspeed), 250kbit/s, 500kbit/s und 1Mbit/s (Highspeed). Dabei wird eine Kabellänge von bis 40m betrachtet.
 
 **Aufbau eines Datenübertragungspakets**
 
@@ -184,6 +190,8 @@ Das "Can-Bus-Kabel" besteht aus zwei ineinander verdrehten Drähten. Eine gute A
 | ACK             | 2 bits  | 1 Acknowledge, 1 Delimiter       |
 | EOF             | 7 bits  | end of field, rezessiv           |
 | IFS             | 3 / 7 bits | rezessiv, Puffer-Feld!        | 
+
+> Für genauere Infos zu den CRC-Bits: [https://www.mikrocontroller.net/articles/CAN_CRC_Berechnung](https://www.mikrocontroller.net/articles/CAN_CRC_Berechnung) und [https://www.can-cia.org/can-knowledge/can/crc/](https://www.can-cia.org/can-knowledge/can/crc/)
 
 ********************************************************************************
 
@@ -317,14 +325,13 @@ Nachdem das "digitale CAN-Signal" generiert wurde, muss es über einen Transceiv
 
 > Diese Transceiver halten CANH und CANL durchgehend auf bestimmten Spannungsleveln und sind dabei sehr stromhungrig, weshalb diese ICs ziemlich häufig Sleep-Modi integriert haben 
 
+[Datenblatt SN65HVD231](https://www.ti.com/lit/ds/symlink/sn65hvd231.pdf?ts=1655567455443&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FSN65HVD231)
+
 ********************************************************************************
 
 ## Quallen
 
 Datensammlung für die Präsentation fand zwischen 12.06 - 19.06 statt. In diesem Zeitraum wurden die Informationen auf u.g. Websiten gefunden. Bei abweichenden Informationen wurde jeweils eine dritte Quelle zum Vergleich herangezogen.
-
-                                  {{0-1}}
-********************************************************************************
 
 **Geschichte und Einordnung**
 
@@ -335,22 +342,12 @@ Teil 2:  Text: [Feldbus Grundlagen und Erklärung – KUNBUS GmbH](https://www.k
                [Industrielle Kommunikation | Feldbus | LAPP (lappkabel.de)](https://www.lappkabel.de/branchen/industrielle-kommunikation/feldbus.html#:~:text=Als%20Feldbus%20bezeichnet%20man%20ein,Aktoren%20st%C3%B6rungsfrei%20Informationen%20austauschen%20k%C3%B6nnen.)
          Bild: [Feldbus-Aufbau](https://www.itwissen.info/lex-images/Aufbau-eines-Feldbusses.png)
          
-********************************************************************************
-
-                                  {{1-2}}
-********************************************************************************
-
 **Elektronische Funktionsweise**
 
          Bild: [CAN-Bus Kabel & Leitungen nach ISO 11898-2 (sab-kabel.de)](https://www.sab-kabel.de/kabel-konfektion-temperaturmesstechnik/kabel-und-leitungen/buskabel-und-leitungen/can-bus-kabel-leitungen.html)
          Text + restl. Bilder:      [How CAN bus works | How data transmitted on CAN bus](https://www.youtube.com/watch?v=EIVQzv6-LRo)
                                     [CAN-BUS Grundlagen - Diagnose am Fahrzeug](https://www.youtube.com/watch?v=izVTPsujT8U)
                                     Eigenproduktion "krasse paint.net Skills"
-
-********************************************************************************
-
-                                  {{2-3}}
-********************************************************************************
 
 **Datenübertragung**
          
@@ -373,26 +370,20 @@ s. übergreifend
          
 s. übergreifend / eigenes Verständnis
 
-********************************************************************************
-
-                                  {{3-4}}
-********************************************************************************
-
 **Golf-Beispiel**
 
 Text / Bilder: [Praktikum CAN-Bus am Fahrzeug (Beispiel Beleuchtung Golf V)](https://www.youtube.com/watch?v=KIJFfHlRWNg)
 
-********************************************************************************
-
-                                  {{4-5}}
-********************************************************************************
-
 **Anwendung auf dem Microcontroller**
 
-Text:
-Bild:
-         
-********************************************************************************         
+Text: Eigene Rechnungen, Datenblatt des verwendeten Transceivers (s. Git-Ordner: "Dateien")
+Bild: Eigenproduktion "krasse Handykamera Skills"     
+
+**Ist es ein Auto?**
+
+Videos und Artikel, die zur Hilfe herangezogen wurden:
+Hauptsächlich: [How to use CAN Protocol in STM32 » ControllersTech](https://controllerstech.com/can-protocol-in-stm32/)
+
 
 ## Ist es ein Auto?
 
