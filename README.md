@@ -336,12 +336,14 @@ Datensammlung für die Präsentation fand zwischen 12.06 - 19.06 statt. In diese
 **Geschichte und Einordnung**
 
 Teil 1:  Text: [CAN- Historie, Standards und Eigenschaften (kunbus.de)](https://www.kunbus.de/can-historie-standards-und-eigenschaften.html)
+
 	Bild: [Zeitlinien-Bild](https://cdn.shopify.com/s/files/1/0579/8032/1980/files/can-bus-history-timeline-controller-area-network.svg?v=1633690040)
 
 Teil 2:  Text: [Feldbus Grundlagen und Erklärung – KUNBUS GmbH](https://www.kunbus.de/feldbus-grundlagen.html)
-               [Industrielle Kommunikation | Feldbus | LAPP (lappkabel.de)](https://www.lappkabel.de/branchen/industrielle-kommunikation/feldbus.html#:~:text=Als%20Feldbus%20bezeichnet%20man%20ein,Aktoren%20st%C3%B6rungsfrei%20Informationen%20austauschen%20k%C3%B6nnen.)
+               [Industrielle Kommunikation](https://www.lappkabel.de/branchen/industrielle-kommunikation/feldbus.html#:~:text=Als%20Feldbus%20bezeichnet%20man%20ein,Aktoren%20st%C3%B6rungsfrei%20Informationen%20austauschen%20k%C3%B6nnen.)
          Bild: [Feldbus-Aufbau](https://www.itwissen.info/lex-images/Aufbau-eines-Feldbusses.png)
-         
+	 
+	 
 **Elektronische Funktionsweise**
 
          Bild: [CAN-Bus Kabel & Leitungen nach ISO 11898-2 (sab-kabel.de)](https://www.sab-kabel.de/kabel-konfektion-temperaturmesstechnik/kabel-und-leitungen/buskabel-und-leitungen/can-bus-kabel-leitungen.html)
@@ -350,11 +352,13 @@ Teil 2:  Text: [Feldbus Grundlagen und Erklärung – KUNBUS GmbH](https://www.k
                                     Eigenproduktion "krasse paint.net Skills"
 
 **Datenübertragung**
+
          
 Übergreifend: [Introduction to the Controller Area Network (CAN) (Rev. B)](https://www.ti.com/lit/an/sloa101b/sloa101b.pdf?ts=1655558654849&ref_url=https%253A%252F%252Fwww.google.com%252F#:~:text=Identifier%2DThe%20Standard%20CAN%2011,value%2C%20the%20higher%20its%20priority.&text=RTR%E2%80%93The%20single%20remote%20transmission,is%20required%20from%20another%20node.)
          
+	 
 Text:    [canbus.pdf (mikrocontroller.net)](https://www.mikrocontroller.net/attachment/6819/canbus.pdf)
-Bilder:  [CAN Protokoll Aufbau und Funktion | der Berufsschullehrer](https://www.youtube.com/watch?v=ak03HkdX1Cw)
+Bilder:  [CAN Protokoll Aufbau und Funktion](https://www.youtube.com/watch?v=ak03HkdX1Cw)
          
 *Synchronisation*
 
@@ -377,11 +381,13 @@ Text / Bilder: [Praktikum CAN-Bus am Fahrzeug (Beispiel Beleuchtung Golf V)](htt
 **Anwendung auf dem Microcontroller**
 
 Text: Eigene Rechnungen, Datenblatt des verwendeten Transceivers (s. Git-Ordner: "Dateien")
+
 Bild: Eigenproduktion "krasse Handykamera Skills"     
 
 **Ist es ein Auto?**
 
 Videos und Artikel, die zur Hilfe herangezogen wurden:
+
 Hauptsächlich: [How to use CAN Protocol in STM32 » ControllersTech](https://controllerstech.com/can-protocol-in-stm32/)
 
 
