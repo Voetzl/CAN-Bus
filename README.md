@@ -15,7 +15,7 @@ icon: https://upload.wikimedia.org/wikipedia/commons/d/de/Logo_TU_Bergakademie_F
 
 -->
 
-[![LiaScript](https://raw.githubusercontent.com/LiaScript/LiaScript/master/badges/course.svg)](https://liascript.github.io/course/?https://github.com/Voetzl/Der-CAN-Bus/blob/main/README.md)
+[![LiaScript](https://raw.githubusercontent.com/LiaScript/LiaScript/master/badges/course.svg)](https://liascript.github.io/course/?https://github.com/Voetzl/CAN-Bus/blob/main/README.md)
 
 # CAN-Bus
 
@@ -24,7 +24,7 @@ icon: https://upload.wikimedia.org/wikipedia/commons/d/de/Logo_TU_Bergakademie_F
 | **Veranstaltung:**       | `Praktikum Digitale Systeme`                                                                                                                                                      |
 | **Hochschule:**          | `Technische Universität Bergakademie Freiberg`                                                                                                                                                    |
 | **Inhalte:**             | `Einführung in die Funktionsweise des CAN-Bus`                                                                                            |
-| **Link auf den GitHub:** | [https://github.com/Voetzl/Der-CAN-Bus](https://github.com/Voetzl/Der-CAN-Bus) |
+| **Link auf den GitHub:** | [https://github.com/Voetzl/CAN-Bus](https://github.com/Voetzl/CAN-Bus) |
 | **Autoren**              | @author                                                                                                                                                                              |
 
 ![](https://cdn.discordapp.com/attachments/667797054474420238/987747554710138940/20220614_234617.jpg)
