@@ -301,11 +301,23 @@ Schalten der Lichtanlage ändert "Data" der Nachricht
 
 ## Anwendung des CAN-Protokolls auf dem Microcontroller
 
---> Eigentlich ist hier die Transceiver-Erklärung dann so drin...
+> Die uns bekannten Microcontroller können alle ein "digitales CAN-Signal" erzeugen!
 
-### Can-Transceiver
+Tatsächlich können sowohl unser kleiner 8-bit Arduino Uno, der Arduino Uno Wifi und natürlich unsere STMs ein CAN-TX-Signal erzeugen und ein CAN-RX Signal empfangen. Jedoch muss beachtet werden: Bei 8 tq / bit und einer Übertragungsgeschwindigkeit von 1000 kbit/s wäre der kleine Arduino vollständig ausgelastet alleine durch das Mitlesen!
+
+Nachdem das "digitale CAN-Signal" generiert wurde, muss es über einen Transceiver auf die richtigen Spannungslevel konvertiert werden.
+
+                                  {{1-2}}
+********************************************************************************
+
+**Can-Transceiver**
 
 ![](https://cdn.discordapp.com/attachments/667797054474420238/987747554122956830/20220614_234545.jpg)
+![](https://cdn.discordapp.com/attachments/667797054474420238/988025542479581214/20220619_120953.jpg)
+
+> Diese Transceiver halten CANH und CANL durchgehend auf bestimmten Spannungsleveln und sind dabei sehr stromhungrig, weshalb diese ICs ziemlich häufig Sleep-Modi integriert haben 
+
+********************************************************************************
 
 ## Quallen
 
