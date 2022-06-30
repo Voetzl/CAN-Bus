@@ -32,6 +32,7 @@ icon: https://upload.wikimedia.org/wikipedia/commons/d/de/Logo_TU_Bergakademie_F
 ![](https://cdn.discordapp.com/attachments/667797054474420238/987749165222199336/20220614_231527.jpg)
 ![](https://cdn.discordapp.com/attachments/667797054474420238/987749227461476352/20220615_164647.jpg)
 ![](https://cdn.discordapp.com/attachments/667797054474420238/987749277394669648/20220615_192457.jpg)
+![](https://cdn.discordapp.com/attachments/466942400267419648/992125116362264696/20220615_192457.jpg)
 
 
 ---
