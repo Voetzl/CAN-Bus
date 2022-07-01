@@ -380,7 +380,7 @@ Text / Bilder: [Praktikum CAN-Bus am Fahrzeug (Beispiel Beleuchtung Golf V)](htt
 **Anwendung auf dem Microcontroller**
 
 Text: Eigene Rechnungen,
-      Datenblatt des verwendeten Transceivers (s. GitHub-Ordner: [Dateien](https://github.com/Voetzl/CAN-Bus/Dateien/tree/main/Dateien) **<- Den Ordner gibt's gar nicht!** 
+      Datenblatt des verwendeten Transceivers (s. GitHub-Ordner: [Dateien](https://github.com/Voetzl/CAN-Bus/Dateien/tree/main/Dateien)) **<- Den Ordner gibt's gar nicht!**
 
 Bild: Eigenproduktion "krasse Handykamera Skills"     
 
