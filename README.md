@@ -393,10 +393,8 @@ Hauptsächlich: [How to use CAN Protocol in STM32 » ControllersTech](https://co
 
 ## Ist es ein Auto?
 
-Code Implementierung 1
+Wir hoffen hier auf funktionierenden Code bis zur Klausur :)
 
-Code Implementierung 2
-
-Code Implementierung 3
+Bis dahin findet sich der Code, der gerne durchgelesen und verbessert werden darf in dieser Repository. "Bernhard_Blue" und "Obvious_Orange" sind jeweils zwei Cube-IDE-Projekte.
 
 
